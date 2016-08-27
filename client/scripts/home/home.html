@@ -1,0 +1,10 @@
+<div id='container'>
+  <div ng-app='home'>
+    <div ng-controller='LinksController'>
+    {{data.links}}
+      <ul>
+      <li ng-repeat='link in data.links track by $index'>{{ link }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

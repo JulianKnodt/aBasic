@@ -1,10 +1,18 @@
 <div id='container'>
   <div ng-app='home'>
-    <div ng-controller='LinksController'>
-    {{data.links}}
-      <ul>
-      <li ng-repeat='link in data.links track by $index'>{{ link }}</li>
-      </ul>
+    <div ng-controller='homeController as home'>
+      <a-scene>
+      <a-sky color="#6EBAA7"></a-sky>
+      <a-box cursor-listener ui-sref='sqr'></a-box>
+      <a-box ng-repeat='post in home.posts' position ='2 0 0'></a-box>
+      <a-box post></a-box>
+       <a-plane color="#CCC" height="20" width="20" rotation="-90 0 0" opacity='.5' position='0 -1 0'></a-plane>
+        <a-camera>
+          <a-cursor>
+          </a-cursor>
+        </a-camera>
+      </a-entity>
+    </a-scene>
     </div>
   </div>
 </div>

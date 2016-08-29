@@ -1,0 +1,23 @@
+<div id='container'>
+  <div ng-app='sqr'>
+    <div ng-controller='sqrController as sqr'>
+      <a-scene>
+      <a-assets>
+        <img id = 'bg' src ='../resources/mass.jpg'/>
+        <!-- <video id="video" src="https://ucarecdn.com/bcece0a8-86ce-460e-856b-40dac4875f15/" autoplay loop crossorigin></video> -->
+      </a-assets>
+
+      <!-- <a-sky color="#6EBAA7"></a-sky> -->
+      <!-- <a-videosphere src="#video" rotation="0 180 0"></a-videosphere> -->
+      <a-sky src='#bg'></a-sky>
+      <a-cone id='test' cursor-listener ui-sref='home' color='blue'></a-box>
+      <a-entity position="0 1.8 5">
+        <a-camera>
+          <a-cursor>
+          </a-cursor>
+        </a-camera>
+      </a-entity>
+    </a-scene>
+    </div>
+  </div>
+</div>
